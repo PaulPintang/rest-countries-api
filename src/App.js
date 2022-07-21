@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Countries from "./components/Countries";
-import CountryDetails from "./components/CountryDetails";
+import Countries from "./components/Country/Countries";
+import CountryDetails from "./components/Country/CountryDetails";
 import Header from "./components/Header";
 function App() {
   return (
