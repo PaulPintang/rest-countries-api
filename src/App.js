@@ -5,11 +5,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="bg-gray-50 h-auto ">
-        <div className="w-[1000px] mx-auto px-[27px]">
-          <Actions />
-          <Countries />
-        </div>
+      <div className="w-[1000px] mx-auto px-[27px]">
+        <Actions />
+        <Countries />
       </div>
     </div>
   );
