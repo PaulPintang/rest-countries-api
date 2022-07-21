@@ -9,6 +9,7 @@ export const CountryProvider = ({ children }) => {
       setCountry(res.data);
     });
   }, []);
+  console.log(country);
   return (
     <CountryContext.Provider value={{ country }}>
       {children}

@@ -12,7 +12,7 @@ function App() {
       <CountryProvider>
         <Routes>
           <Route index element={<Countries />} />
-          <Route path="country/:country" element={<CountryDetails />} />
+          <Route path="country/:countryName" element={<CountryDetails />} />
         </Routes>
       </CountryProvider>
     </div>

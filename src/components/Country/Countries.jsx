@@ -6,11 +6,11 @@ const Countries = () => {
   const { country } = useContext(CountryContext);
 
   return (
-    <div className="w-[1000px] mx-auto px-[27px]">
+    <div className="w-[950px] mx-auto px-[27px]">
       <Actions />
       <div className="flex justify-between w-full flex-wrap gap-y-[50px]">
         {country.map((country) => (
-          <Link to={`country/:${country.name.common}`}>
+          <Link to={`country/${country.name.common}`}>
             <div className="h-[265px] w-[200px] bg-white shadow-md rounded-md">
               <div className="h-[125px]">
                 <img
