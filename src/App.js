@@ -4,7 +4,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Actions />
+      <div className="bg-gray-50 h-auto">
+        <Actions />
+      </div>
     </div>
   );
 }

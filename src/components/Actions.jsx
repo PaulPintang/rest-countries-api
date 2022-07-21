@@ -3,15 +3,15 @@ import React from "react";
 const Actions = () => {
   return (
     <div className="w-[1200px] mx-auto px-[27px]">
-      <div className="flex justify-between items-center w-full py-15">
+      <div className="flex justify-between items-center w-full h-[110px]">
         <div className="relative w-full md:w-auto lg:w-auto">
           <input
-            className="px-3 py-2 md:w-56 lg:w-56 w-full rounded-md text-sm transition focus:outline-none dark:bg-gray-800 dark:text-gray-100 dark:focus:border-gray-800 dark:border-opacity-20 focus:border-opacity-60 border border-gray-200 border-opacity-40 shadow-sm"
+            className="px-3 py-2 md:w-56 lg:w-[300px] w-full rounded-md text-sm transition focus:outline-none dark:bg-gray-800 dark:text-gray-100 dark:focus:border-gray-800 dark:border-opacity-20 focus:border-opacity-60 border border-gray-200 border-opacity-40 shadow-sm"
             type="text"
-            placeholder="Quick Search"
+            placeholder="Select for a country..."
           />
         </div>
-        <div className="relative inline-block text-left w-full">
+        <div className="">
           <div>
             <button
               type="button"
