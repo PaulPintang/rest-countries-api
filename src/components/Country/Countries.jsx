@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import Actions from "./Actions";
+import CountryContext from "./CountryContext";
 const Countries = () => {
-  const [country, setCountry] = useState([]);
-
-  useEffect(() => {
-    axios.get("https://restcountries.com/v3.1/all").then(function (res) {
-      setCountry(res.data);
-    });
-  }, []);
+  const { country } = useContext(CountryContext);
 
   return (
     <div className="w-[1000px] mx-auto px-[27px]">

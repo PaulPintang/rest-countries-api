@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { CountryProvider } from "./components/Country/CountryContext";
 
 import Countries from "./components/Country/Countries";
 import CountryDetails from "./components/Country/CountryDetails";
@@ -8,10 +9,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route index element={<Countries />} />
-        <Route path="country/:country" element={<CountryDetails />} />
-      </Routes>
+      <CountryProvider>
+        <Routes>
+          <Route index element={<Countries />} />
+          <Route path="country/:country" element={<CountryDetails />} />
+        </Routes>
+      </CountryProvider>
     </div>
   );
 }
