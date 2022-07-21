@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Countries />} />
-        <Route path="/country" element={<CountryDetails />} />
+        <Route path="country/:country" element={<CountryDetails />} />
       </Routes>
     </div>
   );
