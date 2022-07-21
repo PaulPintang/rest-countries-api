@@ -5,8 +5,8 @@ const Header = () => {
     <div>
       <header className="shadow-md h-[60px]">
         <div className="flex justify-between items-center h-full px-[100px]">
-          <h1>Where in the world?</h1>
-          <p>Dark Mode</p>
+          <h1 className="font-extrabold">Where in the world?</h1>
+          <p className="text-xs font-medium">Dark Mode</p>
         </div>
       </header>
     </div>
