@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="bg-gray-50 h-auto ">
-        <div className="w-[1200px] mx-auto px-[27px]">
+        <div className="w-[1000px] mx-auto px-[27px]">
           <Actions />
           <Countries />
         </div>
