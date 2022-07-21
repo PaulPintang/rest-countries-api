@@ -1,14 +1,17 @@
-import Actions from "./components/Actions";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
 import Countries from "./components/Countries";
+import CountryDetails from "./components/CountryDetails";
 import Header from "./components/Header";
 function App() {
   return (
     <div className="App">
       <Header />
-      <div className="w-[1000px] mx-auto px-[27px]">
-        <Actions />
-        <Countries />
-      </div>
+      <Routes>
+        <Route index element={<Countries />} />
+        <Route path="/country" element={<CountryDetails />} />
+      </Routes>
     </div>
   );
 }
