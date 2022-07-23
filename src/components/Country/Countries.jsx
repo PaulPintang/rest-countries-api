@@ -11,7 +11,7 @@ const Countries = () => {
       <div className="flex justify-between w-full flex-wrap gap-y-[50px]">
         {country.map((country) => (
           <Link to={`country/${country.name.common}`}>
-            <div className="h-[265px] w-[200px] bg-white shadow-md rounded-md">
+            <div className="h-[265px] w-[188px] bg-white shadow-md rounded-md">
               <div className="h-[125px]">
                 <img
                   src={country.flags.png}

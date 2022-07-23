@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-
+import { IoIosArrowRoundBack } from "react-icons/io";
 import CountryContext from "./CountryContext";
 
 import { useParams, Link } from "react-router-dom";
@@ -14,19 +14,29 @@ const CountryDetails = () => {
   console.log(countryName);
 
   return (
-    <div className="w-[950px] mx-auto px-[27px] h-[70vh]">
-      <Link to="/">
-        <button>Back</button>
-      </Link>
+    <div className="w-[950px] mx-auto px-[27px]">
+      <div className="py-[60px]">
+        <Link to="/">
+          <button className="shadow-[0px_1px_5px_1px_#5552524c] bg-white px-6 py-[4px]  text-[12px] rounded-md">
+            <div className="flex items-center gap-1">
+              <div className="p-0">
+                <IoIosArrowRoundBack size={19} />
+              </div>
+              <span>Back</span>
+            </div>
+          </button>
+        </Link>
+      </div>
+
       {filtered.map((country) => (
         <div className="flex h-full items-center justify-between">
           <div className="w-2/4">
-            <div className="w-[370px] h-[270px] ">
+            <div className="bg-red-800 w-[370px] h-[270px] ">
               <img src={country.flags.png} className="w-full h-full" alt="" />
             </div>
           </div>
 
-          <div className="w-2/4 flex flex-col justify-around h-[270px]  text-[12px]">
+          <div className="w-2/4 flex flex-col justify-around h-[270px] text-[12px]">
             <div>
               <h1 className="text-2xl font-bold pb-5">{country.name.common}</h1>
               <div className="flex justify-between">
