@@ -5,7 +5,7 @@ const Actions = () => {
     <div className="flex justify-between items-center w-full h-[110px]">
       <div className="relative w-full md:w-auto lg:w-auto">
         <input
-          className="px-3 py-2 md:w-56 lg:w-[300px] w-full rounded-md text-sm transition focus:outline-none dark:bg-gray-800 dark:text-gray-100 dark:focus:border-gray-800 dark:border-opacity-20 focus:border-opacity-60 border border-gray-200 border-opacity-40 shadow-sm"
+          className="shadow-[0px_0px_5px_0px_#5552524c] px-3 py-2 md:w-56 lg:w-[300px] w-full rounded-md text-sm transition focus:outline-none dark:bg-gray-800 dark:text-gray-100 "
           type="text"
           placeholder="Select for a country..."
         />
