@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
+
 import CountryContext from "./CountryContext";
 
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const CountryDetails = () => {
   const { country } = useContext(CountryContext);
@@ -14,6 +15,9 @@ const CountryDetails = () => {
 
   return (
     <div className="w-[950px] mx-auto px-[27px] h-[70vh]">
+      <Link to="/">
+        <button>Back</button>
+      </Link>
       {filtered.map((country) => (
         <div className="flex h-full items-center justify-between">
           <div className="w-2/4">
