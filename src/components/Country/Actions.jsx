@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 const Actions = () => {
+  const [region, setRegion] = useState("Filter by region");
   return (
     <div className="flex justify-between items-center w-full h-[115px]">
       <div className="relative w-full md:w-auto lg:w-auto">
         <input
-          className="shadow-[0px_0px_5px_0px_#6564644b] px-3 py-[11px] md:w-56 lg:w-[300px] w-full rounded text-xs transition focus:outline-none dark:bg-gray-800 dark:text-gray-100 "
+          className="shadow-[0px_0px_5px_0px_#6564644b] px-3 py-[13px] md:w-56 lg:w-[300px] w-full rounded text-xs transition focus:outline-none dark:bg-gray-800 dark:text-gray-100 "
           type="text"
           placeholder="Select for a country..."
         />
@@ -19,7 +20,7 @@ const Actions = () => {
             aria-expanded="true"
             aria-haspopup="true"
           >
-            <small>Filter by region</small>
+            <small>{region}</small>
             <MdKeyboardArrowDown fontSize={16} />
           </button>
         </div>
